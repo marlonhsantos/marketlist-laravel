@@ -11,7 +11,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        app()->bind('App\Repositories\Contracts\ProductRepositoryInterface', 'App\Repositories\Database\ProductRepository');
     }
 
     /**
